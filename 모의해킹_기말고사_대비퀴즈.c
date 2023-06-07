@@ -78,7 +78,7 @@ int main(void) {
 
     getchar();
 
-    free(questionOrder, num_questions);
+    free(questionOrder);
 
     return 0;
 }
