@@ -205,7 +205,7 @@ int question5() {
     char answer2[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 5\n\n");
-    printf("외부에서 들어오는 모든 ICMP 요청을 차단하는 iptables 정책을 작성하시오.(명령어 확장형)\n\n");
+    printf("외부에서 들어오는 모든 ICMP 요청을 차단하는 iptables 정책을 작성하시오.(명령어 확장형, 로그 부분 작성)\n\n");
 
 
     fgets(answer1, DEFINED_LENGTH, stdin);
@@ -229,7 +229,7 @@ int question6() {
     char answer2[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 6\n\n");
-    printf("192.168.149.162에 들어오는 ICMP 요청을 차단하는 iptables 정책을 작성하시오.(명령어 확장형)\n\n");
+    printf("192.168.149.162에 들어오는 ICMP 요청을 차단하는 iptables 정책을 작성하시오.(명령어 확장형, 로그 부분 작성)\n\n");
 
 
     fgets(answer1, DEFINED_LENGTH, stdin);
@@ -255,7 +255,7 @@ int question7() {
     char answer4[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 7\n\n");
-    printf("ICMP 패킷 길이가 1024 바이트 이상이면 패킷을 거부하는 iptables 정책을 작성하시오.(명령어 확장형)\n\n");
+    printf("ICMP 패킷 길이가 1024 바이트 이상이면 패킷을 거부하는 iptables 정책을 작성하시오.(명령어 확장형, 로그 부분 작성)\n\n");
 
 
     fgets(answer1, DEFINED_LENGTH, stdin);
@@ -284,7 +284,7 @@ int question8() {
     char answer3[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 8\n\n");
-    printf("TCP 스캔을 플래그별 거부를 통해 차단하는 iptables 정책을 작성하시오.(명령어 확장형, 로그 부분 미작성)\n\n");
+    printf("TCP 스캔을 플래그별 거부를 통해 차단하는 iptables 정책을 작성하시오.(명령어 확장형)\n\n");
 
 
     fgets(answer1, DEFINED_LENGTH, stdin);
@@ -310,7 +310,7 @@ int question9() {
     char answer2[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 9\n\n");
-    printf("192.168.149.162에서 보내는 SSH 요청의 무차별 대입 공격을 차단하기 위해서 1초에 2번 들어오면 거부하는 iptables 정책을 작성하시오.(명령어 확장형, 로그 부분 미작성)\n\n");
+    printf("192.168.149.162에서 보내는 SSH 요청의 무차별 대입 공격을 차단하기 위해서 1초에 2번 들어오면 거부하는 iptables 정책을 작성하시오.(명령어 확장형)\n\n");
 
 
     fgets(answer1, DEFINED_LENGTH, stdin);
