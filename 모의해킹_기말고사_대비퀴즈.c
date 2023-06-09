@@ -140,7 +140,7 @@ int question2() {
     fgets(answer2, DEFINED_LENGTH, stdin);
     fgets(answer3, DEFINED_LENGTH, stdin);
 
-    if((strcmp(answer1, "service apache2 start\n") == 0) && (strcmp(answer2, "service apache2 status\n") == 0) && (strcmp(answer3, "settoolkit\n") == 0)) {
+    if((strcmp(answer1, "service apache2 start\n") == 0) && (strcmp(answer2, "service apache2 status\n") == 0) && (strcmp(answer3, "setoolkit\n") == 0)) {
         return 1;
     }
     else {
@@ -294,7 +294,7 @@ int question8() {
     char answer1[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 8\n\n");
-    printf("다음 MySQL 쿼리문에서 SQL Injection 쿼리를 작성하시오.\n\n");
+    printf("다음 MySQL 쿼리문에서 SQL Injection 입력값을 작성하시오.\n\n");
     printf("select userId, password from user where userId = 'test'\n\n");
 
 
@@ -314,7 +314,7 @@ int question9() {
     char answer1[DEFINED_LENGTH];
     printf("------------------------------------------------------------------------\n");
     printf("문제 9\n\n");
-    printf("다음 MySQL 쿼리문에서 Union SQL Injection 쿼리를 작성해서 userId에 'user_id', password에 'password'를 출력하시오.\n\n");
+    printf("다음 MySQL 쿼리문에서 Union SQL Injection 입력값을 작성해서 userId에 'user_id', password에 'password'를 출력하시오.\n\n");
     printf("select userId, password from user where userId = 'test'\n\n");
 
 

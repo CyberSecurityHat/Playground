@@ -168,7 +168,7 @@ int question3() {
 
     fgets(answer1, DEFINED_LENGTH, stdin);
 
-    if((strcmp(answer1, "iptables --append INPUT --protocol tcp --dport 23 --jump ACCEPT\n") == 0) ) {
+    if((strcmp(answer1, "iptables --append INPUT --protocol tcp --destination-port 23 --jump ACCEPT\n") == 0) ) {
         return 1;
     }
     else {
