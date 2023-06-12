@@ -24,7 +24,7 @@ int check_answer(char *user_answer, char *correct_answer) {
 Question questions[] = {
     {"파일 난독화 탐지 용도로 사용되며 패킹 여부와 언패킹 방식을 확인 가능한 윈도우용 프로그램은 무엇인가?", "EXEinfo PE\n", check_answer},
     {"PE 파일의 리소스를 확인하고 프로세스를 조사하는 윈도우용 프로그램은 무엇인가?", "Resource Hacker\n", check_answer},
-    {"strings, 파일 의존성과 임포트 조사 등을 하는 윈도우용 프로그램은 무엇인가?", ".text\n", check_answer},
+    {"strings, 파일 의존성과 임포트 조사 등을 하는 윈도우용 프로그램은 무엇인가?", "PE Studio", check_answer},
     {"PE 파일에서 실행코드가 위치하는 영역은 어느 어디인가?", ".text\n", check_answer},
     {"PE 파일에서 저장 문자열 등(초기화된 전역변수, Static 변수)이 위치하는 영역은 어디인가?", ".data\n", check_answer},
     {"PE 파일에서 임포트가 위치하는 영역은 어디인가?", ".idata\n", check_answer},
