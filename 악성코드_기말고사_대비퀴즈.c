@@ -93,6 +93,7 @@ void print_result(int total_points, int* correct, int* incorrect, char **user_an
     for(int i = 0; i < index_incorrect; i++) {
         int question_index = incorrect[i] - 1;
         printf("틀린 문제 번호: %d\n", incorrect[i]);
+        printf("문제: %s\n", questions[question_index].question);
         printf("사용자 답변: %s", user_answers[question_index]);
         printf("정답: %s\n", questions[question_index].answer);
     }
