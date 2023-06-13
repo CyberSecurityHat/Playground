@@ -85,19 +85,29 @@ void print_result(int total_points, int* correct, int* incorrect, char **user_an
     printf("점수: %d\n", total_points);
 
     for(int i = 0; i < index_correct; i++) {
-        printf("맞은 문제 번호: %d\n", correct[i]);
+        printf("맞은 문제 번호: %d\n", i+1);
     }
     printf("\n");
 
-    
     for(int i = 0; i < index_incorrect; i++) {
         int question_index = incorrect[i] - 1;
-        printf("틀린 문제 번호: %d\n", incorrect[i]);
+        printf("틀린 문제 번호: %d\n", question_index + 1);
         printf("문제: %s\n", questions[question_index].question);
         printf("사용자 답변: %s", user_answers[question_index]);
         printf("정답: %s\n", questions[question_index].answer);
     }
     printf("\n");
+}
+
+void shuffle(Question *array, int n) {
+    if (n > 1) {
+        for (int i = 0; i < n - 1; i++) {
+            int j = i + rand() / (RAND_MAX / (n - i) + 1);
+            Question t = array[j];
+            array[j] = array[i];
+            array[i] = t;
+        }
+    }
 }
 
 int main(void) {
@@ -123,6 +133,8 @@ int main(void) {
             return -1;
         }
     }
+
+    shuffle(questions, num_questions);
 
     printf("-----------------악성코드 기말고사 대비 퀴즈-----------------\n\n");
 
